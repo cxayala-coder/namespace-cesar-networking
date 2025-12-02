@@ -3,14 +3,10 @@ kind: NetworkPolicy
 metadata:
   name: microserviciocxas-policy
   namespace: cesar
-specs:
+spec:
   podSelector:
     matchLabels:
       app: microserviciocxas
   policyTypes:
     - Ingress
     - Egress
-  ingress:
-    - {}
-  egress:
-    - {}
